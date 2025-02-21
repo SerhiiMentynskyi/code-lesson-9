@@ -4,8 +4,7 @@ print('HTTP Requests')
 print('https://httpbin.org/get')
 
 opener = ur.build_opener()
-resp = opener.open('https://httpbin.org/get')
+# resp = opener.open('https://httpbin.org/get')
 
-# for _ in resp.read():
-#     print(_)
+resp = opener.open('https://httpbin.org/get')
 print(resp.read())
